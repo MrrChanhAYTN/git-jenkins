@@ -16,7 +16,6 @@ public class App {
         WebDriver wdriver = new ChromeDriver();
         JavascriptExecutor js = (JavascriptExecutor) wdriver;
         wdriver.get("http://127.0.0.1:5500/login.html");
-        
         WebElement inputName = wdriver.findElement(By.id("inputName"));
         WebElement inputPass = wdriver.findElement(By.id("inputPass"));
         WebElement btnSubmit = wdriver.findElement(By.id("btnSubmit"));
