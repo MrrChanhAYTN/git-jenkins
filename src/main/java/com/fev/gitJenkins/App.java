@@ -19,7 +19,6 @@ public class App {
         WebElement inputName = wdriver.findElement(By.id("inputName"));
         WebElement inputPass = wdriver.findElement(By.id("inputPass"));
         WebElement btnSubmit = wdriver.findElement(By.id("btnSubmit"));
-        
         js.executeScript("arguments[0].value='" + "ADMINADMIN" + "'", inputName);
         js.executeScript("arguments[0].value='" + "08102003" + "'", inputPass);
         btnSubmit.click();
